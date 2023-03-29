@@ -4,10 +4,6 @@ const passwordInput = document.getElementById("password");
 const usernameInput = document.getElementById("username");
 const btn = document.getElementById("btn");
 
-function Redirect() {
-    window.location.href = "add.html";
- 
-
 btn.addEventListener("click", () => {
     const email = emailInput.value;
     const password = passwordInput.value;
@@ -20,10 +16,9 @@ btn.addEventListener("click", () => {
             username: username
         })
         .then((response) => {
-           console.log(response),
-            send.response(Redirect());
+           console.log(response);
         });
-})};
+});
 
 
 
