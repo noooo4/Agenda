@@ -13,6 +13,7 @@ btn.addEventListener("click", () => {
         {
             username: username
         })
+
         .then((response) => {
             myDelete(response);
         });
