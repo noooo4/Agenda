@@ -65,7 +65,7 @@ module.exports = function (nconf, pool) {
         });
         res.send(username, password, email);
     }); //fatto
-    route.delete('/delete/:username', function (req, res) {
+    route.delete('/student/:username', function (req, res) {
         console.log(req.params);
         pool.query("DELETE FROM studenti WHERE username = ?", req.params.username, function (err, result) {
             if (err) throw err;
@@ -74,41 +74,20 @@ module.exports = function (nconf, pool) {
         res.send('complimenti');
     });//fatto
 
-    //EVENTI
-    route.post('/eventi', function (req, res) {
-        var username = req.body.username;
-        var teacher = req.body.teacher;
-        var subject = req.body.subject;
-        var date = req.body.date;
-        var description = req.body.description;
-        pool.query("INSERT INTO eventi ( username, teacher, subject, Date, description ) VALUES (?, ?, ?, ?, ?)", [req.body.username, req.body.teacher, req.body.subject, req.body.date, req.body.description], function (err, result) {
-            if (err) throw err;
-            console.log(" un evento aggiunto ");
-        });
-        res.send(username, teacher, subject, date, description);
-    })
-
-    route.get('/eventi', function (req, res) {
-        console.log(req.params);
-        pool.query("SELECT * FROM eventi", function (err, records) {
-            console.log("RECORDS", records)
-            if (err) {
-                console.log('err', err)
-            }
-            return res.send('completed');
-        });
-    });
 
     //LOGIN
     route.post('/login', function (request, response) {
         let username = request.body.username;
         let password = request.body.password;
         let email = request.body.email;
-        if (username, password, email) {
+        if (username && password) {
             pool.query('SELECT * FROM studenti WHERE username = ? AND password = SHA2(?, 512) AND email = ?', [username, password, email], function (error, results, fields) {
                 if (error) error;
                 if (results.length > 0) {
-                    // response.redirect('/calendar-front-end/add.html');
+                    request.session.loggedin = true;
+                    request.session.username = username;
+                    response.redirect('/add.html');
+                    response.status(200).send(' Funziona ti sei Loggato ');
                     console.log(" Funziona ti sei Loggato ");
                 } else {
                     response.status(400).send(' Password, Email e/o Username Sbagliati ');
@@ -119,6 +98,7 @@ module.exports = function (nconf, pool) {
             });
         }
     });//fatto
+
 
     return route;
 }

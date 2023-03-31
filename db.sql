@@ -66,14 +66,16 @@ INSERT INTO materie(subject, teacher)
 VALUES ('Scienze', 'Filippo');
 
 CREATE TABLE eventi(
-eventi_id INT NOT NULL AUTO_INCREMENT,
+eventi_id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50),
+teacher VARCHAR(40),
+subject VARCHAR(40),
 Date DATE NOT NULL,
-description VARCHAR(256)
+description varchar(256)
 );
 
-INSERT INTO eventi(date, description)
-VALUES ('2023-03-20', riunione);
-INSERT INTO eventi(date, description)
-VALUES ('2023-03-25', partita);
+INSERT INTO eventi(username, subject, teacher, date, description)
+VALUES (Hope, Fardin, Matematica, '2023-03-25', verifica sul teorema di pitagora);
+
 
 
