@@ -1,3 +1,4 @@
+
 var nconf = require('nconf');
 var express = require('express');
 var cors = require ('cors');
@@ -10,7 +11,6 @@ nconf.argv().env().file({ file: 'config.json' });
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 
 var pool = mysql.createPool({
     connectionLimit: 10,

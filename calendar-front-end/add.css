@@ -4,13 +4,79 @@ body {
    background-color: #f5f5f5;
 }
 
+.table {
+   margin: auto;
+   width: 100%;
+   padding: 10px;
+   align-items: center;
+}
+
+.agenda {
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+   align-items: center;
+}
+
+.flex-wrap{
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+   align-items: center;
+}
+
+.delete {
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+   align-items: center;
+}
+
+.b-example-divider {
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   border-radius: 2%;
+   border-top-left-radius: 2%;
+   border-top-right-radius: 2%;
+   border-bottom-left-radius: 2%;
+   border-bottom-right-radius: 2%;
+}
+
+h1 {
+   margin-top: auto;
+   text-align: center;
+}
+
+p {
+   margin-top: auto;
+   text-align: center;
+}
+
+.description-calendar{
+   margin-top: 5rem;
+}
+
+.footer-container{
+   margin-top: 10rem;
+}
+
 .form-floating {
    display: flex;
    align-items: center;
    margin-left: 5rem;
    margin-right: 5rem;
+}
 
+.line {
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+}
 
+.form-floating input[type="id"] {
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+   border-bottom-right-radius: 1rem;
 }
 
 .form-floating input[type="username"] {
@@ -18,9 +84,7 @@ body {
    border-top-right-radius: 1rem;
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
-   margin-top: 1%;
-   margin-bottom: 1%;
-
+   margin-top: 1rem;
 }
 
 .form-floating input[type="teacher"] {
@@ -29,7 +93,6 @@ body {
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
    margin-top: 1rem;
-   margin-bottom: 1rem;
 }
 
 .form-floating input[type="subject"] {
@@ -37,10 +100,7 @@ body {
    border-top-right-radius: 1rem;
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
-   margin-top: 1%;
-   margin-bottom: 1%;
-
-
+   margin-top: 1rem;
 }
 
 .form-floating input[type="date"] {
@@ -48,10 +108,7 @@ body {
    border-top-right-radius: 1rem;
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
-   margin-top: 1%;
-   margin-bottom: 1%;
-
-
+   margin-top: 1rem;
 }
 
 .form-floating input[type="description"] {
@@ -60,12 +117,13 @@ body {
    border-top-right-radius: 1rem;
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
-   margin-top: 1%;
-   margin-bottom: 1%;
-
-
+   margin-top: 1rem;
 }
 
+.btn {
+   margin-top: 1rem;
+   margin-left: 5rem;
+}
 
 .bd-placeholder-img {
    font-size: 1.125rem;

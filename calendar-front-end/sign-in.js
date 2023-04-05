@@ -4,10 +4,12 @@ const passwordInput = document.getElementById("password");
 const usernameInput = document.getElementById("username");
 const btn = document.getElementById("btn");
 
+// myFunction
 function myFunction() {
     location.replace('./add.html')
 }
 
+//btn
 btn.addEventListener("click", () => {
     const email = emailInput.value;
     const password = passwordInput.value;
