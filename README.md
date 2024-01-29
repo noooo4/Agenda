@@ -1,5 +1,27 @@
 # Agenda - 20/03/2023
 
+# Progetto Agenda
+Il Progetto Agenda è un'applicazione che ti aiuta a gestire il tuo tempo in modo efficiente e organizzato. Sia che tu stia pianificando gli impegni lavorativi o gli appuntamenti personali, questa agenda digitale offre una serie di funzionalità per semplificare la tua vita quotidiana.
+
+## Obiettivi
+L'obiettivo principale del Progetto Agenda è fornire agli utenti uno strumento flessibile e intuitivo per la gestione delle attività quotidiane. Tra gli obiettivi principali troviamo:
+
+- **Organizzazione:** Consentire agli utenti di organizzare appuntamenti, scadenze e attività in modo chiaro e ordinato.
+- **Notifiche:** Invio di notifiche e promemoria per garantire che nessun impegno venga trascurato.
+- **Condivisione:** Possibilità di condividere gli eventi con colleghi, amici o familiari per una pianificazione collaborativa.
+- **Sincronizzazione:** Integrazione con dispositivi mobili e altri servizi di calendario per una sincronizzazione senza soluzione di continuità.
+
+## Funzionalità Principali
+- **Calendario Mensile:** Visualizzazione chiara degli eventi pianificati per il mese corrente.
+- **Agenda Giornaliera:** Dettagli giornalieri con elenco degli appuntamenti e delle attività.
+- **Creazione di Eventi:** Aggiunta semplice di nuovi eventi con data, orario e descrizione.
+- **Notifiche e Promemoria:** Ricezione di notifiche per gli eventi imminenti.
+- **Condivisione di Eventi:** Possibilità di condividere gli eventi con altri utenti.
+- **Sincronizzazione:** Integrazione con servizi di calendario esterni e dispositivi mobili.
+
+## Utilizzo
+Gli utenti possono sfruttare l'agenda per gestire con facilità le proprie attività quotidiane. Che si tratti di incontri di lavoro, compleanni o semplici promemoria, il Progetto Agenda è progettato per adattarsi alle esigenze di ogni utente, offrendo una piattaforma intuitiva e completa per la gestione del tempo.
+
 ## Struttura del Database
 Il database è composto da tre tabelle principali:
 
