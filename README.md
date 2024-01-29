@@ -60,13 +60,10 @@ Dopo i test, cripta le password degli utenti utilizzando SHA2(?, 512) durante il
 
 ## GRAFICA
 ### ESEMPIO MATERIE
-![Immagine Materie](link_immagine_materie)
 
 ### ESEMPIO STUDENTI
-![Immagine Studenti](link_immagine_studenti)
 
 ### ESEMPIO EVENTI
-![Immagine Eventi](link_immagine_eventi)
 
 ## FRONT-END
 - **Sign-in.html:**
